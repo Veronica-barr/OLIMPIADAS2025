@@ -1,0 +1,135 @@
+/* Estilos para el carrito */
+.cart-container {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#carrito {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 350px;
+    background-color: var(--white-color);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    z-index: 100;
+    display: none;
+    margin-top: 10px;
+}
+
+#carrito.active {
+    display: block;
+}
+
+#lista-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+#lista-carrito th {
+    text-align: left;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+#lista-carrito td {
+    padding: 1rem 0.8rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--gray-light);
+    vertical-align: middle;
+}
+
+#lista-carrito img {
+    width: 50px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+#lista-carrito .borrar-producto {
+    color: #e74c3c;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#lista-carrito .borrar-producto:hover {
+    color: #c0392b;
+}
+
+#vaciar-carrito, #carrito a[href] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+#vaciar-carrito {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+    background-color: #c0392b;
+}
+
+#carrito a[href] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+#carrito a[href]:hover {
+    background-color: var(--dark-color);
+}
+
+/* Notificación */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+    animation: slideIn 0.3s ease-out;
+    font-size: 1.4rem;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuelo a Bariloche | VolARG</title>
+    <link rel="stylesheet" href="../verano/css/buenosAires.css">
+    <link rel="stylesheet" href="../verano/css/normalize2.css">
+    <link rel="stylesheet" href="../verano/css/principal2.css">
+    <link rel="stylesheet" href="../verano/css/skeleton2.css">
+    <link rel="stylesheet" href="../verano/css/estilosCarrito.css">
+
+    <!-- <link rel="stylesheet" href="css/verano.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../../indexPrincipal.html">VolARG</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../..//nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../..//nav/vuelos.html">Vuelos</a></li>
+                <li><a href="../..//nav/ofertas.html">Ofertas</a></li>
+                <li><a href="../../nav/adicional.html">Adicionales</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="../../vueloLimitados/imgInvierno/bariloche.jpeg" alt="Bariloche">
+                    <img src="imgHoteles/hotelBariloche.jpg" alt="Llao Llao Hotel & Resort">
+                    
+                    <span class="discount-badge">7 Días / 6 Noches</span>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Vuelo a Bariloche, Argentina</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(48 reseñas)</span>
+                    </div>
+                    
+                    <div class="product-price">$1,894,309</div>
+                    
+                    <p class="product-description">
+                        Disfruta de unas vacaciones invernales en uno de los destinos más espectaculares de Argentina. 
+                        Este paquete incluye vuelo desde Córdoba y alojamiento en el exclusivo Llao Llao Hotel & Resort, 
+                        ubicado en un entorno natural privilegiado con vistas al lago Nahuel Huapi.
+                    </p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-calendar-days feature-icon"></i>
+                            <span>Fecha: Vie 15 de Ago - Vie 22 Ago</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-location-dot feature-icon"></i>
+                            <span>Origen: Córdoba, Argentina</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-hotel feature-icon"></i>
+                            <span>Alojamiento: Llao Llao Hotel & Resort</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-utensils feature-icon"></i>
+                            <span>Desayuno buffet incluido</span>
+                        </div>
+                    </div>
+                    
+                   <button class="btn-add-to-cart agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product-details-section">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Descripción</button>
+                    <button class="tab-btn" data-tab="itinerary">Itinerario</button>
+                    <button class="tab-btn" data-tab="hotel">Hotel</button>
+                    <button class="tab-btn" data-tab="policies">Políticas</button>
+                </div>
+                
+                <div class="tab-content active" id="description">
+                    <h3>Acerca de este paquete</h3>
+                    <p>
+                        Este exclusivo paquete turístico a Bariloche incluye vuelo ida y vuelta desde Córdoba y 
+                        6 noches de alojamiento en el prestigioso Llao Llao Hotel & Resort, ubicado en uno de los 
+                        paisajes más impresionantes de la Patagonia argentina.
+                    </p>
+                    <p>
+                        Bariloche, conocida como la "Suiza argentina", ofrece una combinación única de paisajes montañosos, 
+                        lagos cristalinos y actividades de invierno. Durante tu estadía podrás disfrutar de:
+                    </p>
+                    <ul>
+                        <li>Vistas panorámicas al lago Nahuel Huapi y cerros circundantes</li>
+                        <li>Acceso a los mejores centros de esquí de la región</li>
+                        <li>Excursiones por el Parque Nacional Nahuel Huapi</li>
+                        <li>Spa de clase mundial con tratamientos relajantes</li>
+                        <li>Gastronomía patagónica en restaurantes gourmet</li>
+                        <li>Actividades de nieve y deportes invernales</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="itinerary">
+                    <h3>Detalles del vuelo</h3>
+                    <table class="flight-details-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Vuelo</th>
+                                <th>Salida</th>
+                                <th>Llegada</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vie 15 Ago</td>
+                                <td>AR 1872 (Aerolíneas Argentinas)</td>
+                                <td>COR 08:45</td>
+                                <td>BRC 10:30</td>
+                                <td>1h 45m (directo)</td>
+                            </tr>
+                            <tr>
+                                <td>Vie 22 Ago</td>
+                                <td>AR 1875 (Aerolíneas Argentinas)</td>
+                                <td>BRC 18:20</td>
+                                <td>COR 20:05</td>
+                                <td>1h 45m (directo)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 style="margin-top: 30px;">Itinerario sugerido</h3>
+                    <ul>
+                        <li><strong>Día 1:</strong> Llegada al aeropuerto de Bariloche y traslado al hotel. Tarde de relax disfrutando de las vistas.</li>
+                        <li><strong>Día 2:</strong> Día libre en el hotel para disfrutar de sus instalaciones y actividades.</li>
+                        <li><strong>Día 3:</strong> Excursión al Cerro Catedral para esquiar o disfrutar de la nieve.</li>
+                        <li><strong>Día 4:</strong> Circuito Chico con visita a puntos panorámicos y Villa Tacul.</li>
+                        <li><strong>Día 5:</strong> Día de spa y actividades en el hotel.</li>
+                        <li><strong>Día 6:</strong> Excursión a Cerro Campanario y visita al centro de Bariloche.</li>
+                        <li><strong>Día 7:</strong> Mañana libre. Traslado al aeropuerto por la tarde.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="hotel">
+                    <h3>Llao Llao Hotel & Resort</h3>
+                    <div class="hotel-info-container">
+                        <img src="imgHoteles/hotelBariloche.jpg" alt="Llao Llao Hotel & Resort" class="hotel-image">
+                        <div class="hotel-details">
+                            <p>
+                                El Llao Llao Hotel & Resort es un ícono de la hotelería argentina, ubicado en un entorno natural privilegiado 
+                                entre los lagos Nahuel Huapi y Moreno. Ofrece lujo y confort con:
+                            </p>
+                            <ul>
+                                <li>Habitaciones y suites con vista a los lagos o montañas</li>
+                                <li>Acceso directo a actividades náuticas en verano y nieve en invierno</li>
+                                <li>Piscina climatizada interior y exterior</li>
+                                <li>4 restaurantes con cocina internacional y patagónica</li>
+                                <li>Centro de bienestar con spa, sauna y gimnasio</li>
+                                <li>Actividades recreativas y deportivas para todas las edades</li>
+                                <li>Kids Club con actividades para niños</li>
+                            </ul>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(5 estrellas - Leading Hotels of the World)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="policies">
+                    <h3>Políticas importantes</h3>
+                    <h4>Cancelación</h4>
+                    <p>
+                        Cancelación gratuita hasta 45 días antes del viaje. Entre 44 y 30 días antes, 
+                        se cobrará el 20% del valor total. Entre 29 y 15 días, el 40%. Cancelaciones dentro de los 14 días previos 
+                        no son reembolsables.
+                    </p>
+                    
+                    <h4>Documentación requerida</h4>
+                    <p>
+                        DNI o pasaporte válido para ciudadanos argentinos. Para extranjeros, pasaporte con sello de entrada al país.
+                    </p>
+                    
+                    <h4>Equipaje</h4>
+                    <p>
+                        Incluye una maleta de bodega de hasta 15kg y equipaje de mano de 5kg por persona. 
+                        Equipaje adicional disponible por cargo extra (recomendado para equipos de esquí).
+                    </p>
+                    
+                    <h4>Cambios</h4>
+                    <p>
+                        Cambios de fecha sujetos a disponibilidad con cargo adicional. Se recomienda 
+                        contratar seguro de viaje que cubra cancelaciones por condiciones climáticas.
+                    </p>
+                    
+                    <h4>Check-in/Check-out</h4>
+                    <p>
+                        Check-in: 15:00 hs | Check-out: 10:00 hs. Early check-in y late check-out sujetos a disponibilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="../../PaquetesPrincipal/payment.png" alt="Métodos de pago">
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/buenosAires.js"></script> -->
+    <script src="../../detalleProducto/verano/js/app.js"></script>
+
+</body>
+</html>

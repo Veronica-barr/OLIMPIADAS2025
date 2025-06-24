@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuelo a Bariloche | VolARG</title>
+    <link rel="stylesheet" href="../verano/css/buenosAires.css">
+    <link rel="stylesheet" href="../verano/css/normalize2.css">
+    <link rel="stylesheet" href="../verano/css/principal2.css">
+    <link rel="stylesheet" href="../verano/css/skeleton2.css">
+    <link rel="stylesheet" href="../verano/css/estilosCarrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../../indexPrincipal.html">VolARG</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../..//nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../..//nav/vuelos.html">Vuelos</a></li>
+                <li><a href="../..//nav/ofertas.html">Ofertas</a></li>
+                <li><a href="../../nav/adicional.html">Adicionales</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="../../vueloLimitados/imgInvierno/tokio.jpg" alt="Tokio, Japón">
+                    <img src="imgHoteles/hotelTokio.jpg" alt="Hotel Gracery Shinjuku">
+                    <span class="discount-badge">7 Días / 6 Noches</span>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Vuelo a Tokio, Japón</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(87 reseñas)</span>
+                    </div>
+                    
+                    <div class="product-price">$5,200,000</div>
+                    
+                    <p class="product-description">
+                        Experimenta la mezcla perfecta de tradición y modernidad en la vibrante capital japonesa. 
+                        Este paquete incluye vuelo directo desde Buenos Aires y alojamiento en el céntrico 
+                        Hotel Gracery Shinjuku, a pasos de las principales atracciones de la ciudad.
+                    </p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-calendar-days feature-icon"></i>
+                            <span>Fecha: Vie 10 de Ene - Vie 17 de Ene</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-location-dot feature-icon"></i>
+                            <span>Origen: Buenos Aires, Argentina</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-hotel feature-icon"></i>
+                            <span>Alojamiento: Hotel Gracery Shinjuku</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-utensils feature-icon"></i>
+                            <span>Desayuno estilo japonés incluido</span>
+                        </div>
+                    </div>
+                    
+                   <button class="btn-add-to-cart agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product-details-section">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Descripción</button>
+                    <button class="tab-btn" data-tab="itinerary">Itinerario</button>
+                    <button class="tab-btn" data-tab="hotel">Hotel</button>
+                    <button class="tab-btn" data-tab="policies">Políticas</button>
+                </div>
+                
+                <div class="tab-content active" id="description">
+                    <h3>Acerca de este paquete</h3>
+                    <p>
+                        Descubre la fascinante cultura japonesa con este paquete completo que incluye vuelos y alojamiento 
+                        en uno de los hoteles mejor ubicados de Tokio. El Hotel Gracery Shinjuku ofrece fácil acceso 
+                        a las principales atracciones de la ciudad.
+                    </p>
+                    <p>
+                        Durante tu estadía podrás disfrutar de:
+                    </p>
+                    <ul>
+                        <li>Explorar el famoso cruce de Shibuya</li>
+                        <li>Visitar templos históricos como el Sensoji en Asakusa</li>
+                        <li>Probar auténtica gastronomía japonesa</li>
+                        <li>Compras en Akihabara (tecnología) y Ginza (lujo)</li>
+                        <li>Vistas panorámicas desde la Tokyo Skytree</li>
+                        <li>Experiencias culturales únicas</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="itinerary">
+                    <h3>Detalles del vuelo</h3>
+                    <table class="flight-details-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Vuelo</th>
+                                <th>Salida</th>
+                                <th>Llegada</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vie 10 Ene</td>
+                                <td>JL 60 (Japan Airlines)</td>
+                                <td>EZE 23:30</td>
+                                <td>HND 07:30 (+2 días)</td>
+                                <td>26h (con escala)</td>
+                            </tr>
+                            <tr>
+                                <td>Vie 17 Ene</td>
+                                <td>JL 61 (Japan Airlines)</td>
+                                <td>HND 11:00</td>
+                                <td>EZE 15:00 (+1 día)</td>
+                                <td>24h (con escala)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 style="margin-top: 30px;">Itinerario sugerido</h3>
+                    <ul>
+                        <li><strong>Día 1:</strong> Salida desde Buenos Aires</li>
+                        <li><strong>Día 2:</strong> Llegada a Tokio y traslado al hotel</li>
+                        <li><strong>Día 3:</strong> Tour por Shinjuku y Shibuya</li>
+                        <li><strong>Día 4:</strong> Visita a Asakusa y Ueno</li>
+                        <li><strong>Día 5:</strong> Día libre para compras</li>
+                        <li><strong>Día 6:</strong> Excursión a Nikko o Hakone</li>
+                        <li><strong>Día 7:</strong> Regreso a Buenos Aires</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="hotel">
+                    <h3>Hotel Gracery Shinjuku</h3>
+                    <div class="hotel-info-container">
+                        <img src="imgHoteles/hotelTokio.jpg" alt="Hotel Gracery Shinjuku" class="hotel-image">
+                        <div class="hotel-details">
+                            <p>
+                                Ubicado en el corazón de Shinjuku, este hotel temático de Godzilla ofrece:
+                            </p>
+                            <ul>
+                                <li>Habitaciones modernas y confortables</li>
+                                <li>Terraza con estatua de Godzilla</li>
+                                <li>Excelente ubicación cerca del transporte</li>
+                                <li>Restaurante con cocina japonesa e internacional</li>
+                                <li>Bar en la azotea con vistas panorámicas</li>
+                                <li>WiFi gratuito en todas las áreas</li>
+                            </ul>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(4 estrellas)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="policies">
+                    <h3>Políticas importantes</h3>
+                    <h4>Cancelación</h4>
+                    <p>
+                        Cancelación gratuita hasta 60 días antes. Penalidades aplican después.
+                    </p>
+                    
+                    <h4>Documentación</h4>
+                    <p>
+                        Pasaporte válido por 6 meses. Visa no requerida para estancias <90 días.
+                    </p>
+                    
+                    <h4>Equipaje</h4>
+                    <p>
+                        2 maletas de 23kg + equipaje de mano incluido.
+                    </p>
+                    
+                    <h4>Cambios</h4>
+                    <p>
+                        Sujetos a disponibilidad con cargo adicional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="../../PaquetesPrincipal/payment.png" alt="Métodos de pago">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../detalleProducto/verano/js/app.js"></script>
+</body>
+</html>

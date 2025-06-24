@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuelo a Islas Maldivas | VolARG</title>
+    <link rel="stylesheet" href="css/buenosAires.css">
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/principal2.css">
+    <link rel="stylesheet" href="css/skeleton2.css">
+    <link rel="stylesheet" href="css/skeleton2.css">
+    <link rel="stylesheet" href="css/estilosCarrito.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../../indexPrincipal.html">VolARG</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../..//nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../..//nav/vuelos.html">Vuelos</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="../../vueloLimitados/imgVerano/IslasMaldivas.webp" alt="Islas Maldivas">
+                    <img src="imgHoteles/hotelMaldivas.jpg" alt="Paradise Island Resort & Spa">
+                    
+                    <span class="discount-badge">10 Días / 9 Noches</span>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Vuelo a Islas Maldivas</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(124 reseñas)</span>
+                    </div>
+                    
+                    <div class="product-price">$3,500,000</div>
+                    
+                    <p class="product-description">
+                        Experimenta el paraíso en la tierra con este viaje exclusivo a las Islas Maldivas. 
+                        Este paquete incluye vuelo desde Buenos Aires y alojamiento en el paradisíaco 
+                        Paradise Island Resort & Spa, un resort 5 estrellas ubicado en su propia isla privada.
+                    </p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-calendar-days feature-icon"></i>
+                            <span>Fecha: Mié 10 de Sep - Lun 15 Sep</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-location-dot feature-icon"></i>
+                            <span>Origen: Buenos Aires, Argentina</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-hotel feature-icon"></i>
+                            <span>Alojamiento: Paradise Island Resort & Spa</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-umbrella-beach feature-icon"></i>
+                            <span>Villas sobre el agua con acceso directo al mar</span>
+                        </div>
+                    </div>
+                    
+                   <button class="btn-add-to-cart agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product-details-section">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Descripción</button>
+                    <button class="tab-btn" data-tab="itinerary">Itinerario</button>
+                    <button class="tab-btn" data-tab="hotel">Hotel</button>
+                    <button class="tab-btn" data-tab="policies">Políticas</button>
+                </div>
+                
+                <div class="tab-content active" id="description">
+                    <h3>Acerca de este paquete</h3>
+                    <p>
+                        Este exclusivo paquete a las Maldivas incluye vuelo internacional y 9 noches 
+                        de alojamiento en el lujoso Paradise Island Resort & Spa, ubicado en la isla 
+                        de Lankanfinolhu en el atolón North Malé, a solo 20 minutos en lancha rápida 
+                        desde el aeropuerto internacional Velana.
+                    </p>
+                    <p>
+                        Las Maldivas son sinónimo de paraíso tropical, con aguas cristalinas, arrecifes 
+                        de coral vibrantes y playas de arena blanca. Durante tu estadía podrás disfrutar de:
+                    </p>
+                    <ul>
+                        <li>Villas de lujo sobre el agua con piso de vidrio</li>
+                        <li>Acceso directo al océano desde tu habitación</li>
+                        <li>Snorkeling y buceo en arrecifes vírgenes</li>
+                        <li>Spa sobre el agua con tratamientos tradicionales</li>
+                        <li>Cenas románticas en la playa bajo las estrellas</li>
+                        <li>Gastronomía internacional en 5 restaurantes gourmet</li>
+                        <li>Tour en hidroavión para ver las islas desde el aire</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="itinerary">
+                    <h3>Detalles del vuelo</h3>
+                    <table class="flight-details-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Vuelo</th>
+                                <th>Salida</th>
+                                <th>Llegada</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mié 10 Sep</td>
+                                <td>QR 921 (Qatar Airways)</td>
+                                <td>EZE 22:30</td>
+                                <td>MLE 23:30 (+1 día)</td>
+                                <td>22h (con escala en DOH)</td>
+                            </tr>
+                            <tr>
+                                <td>Lun 15 Sep</td>
+                                <td>QR 668 (Qatar Airways)</td>
+                                <td>MLE 02:15</td>
+                                <td>EZE 19:40 (+1 día)</td>
+                                <td>24h 25m (con escala en DOH)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 style="margin-top: 30px;">Itinerario sugerido</h3>
+                    <ul>
+                        <li><strong>Día 1-2:</strong> Vuelo internacional a Malé con escala. Traslado en lancha rápida al resort.</li>
+                        <li><strong>Día 3:</strong> Día de relax en la villa. Snorkeling en el house reef del resort.</li>
+                        <li><strong>Día 4:</strong> Excursión de buceo para ver mantarrayas y tortugas marinas.</li>
+                        <li><strong>Día 5:</strong> Tour en hidroavión para vista aérea de los atolones.</li>
+                        <li><strong>Día 6:</strong> Día de spa con masaje tradicional maldivo sobre el agua.</li>
+                        <li><strong>Día 7:</strong> Excursión a Malé para conocer la capital.</li>
+                        <li><strong>Día 8:</strong> Cena romántica en la playa con mesa privada en la arena.</li>
+                        <li><strong>Día 9:</strong> Día libre para disfrutar de las instalaciones del resort.</li>
+                        <li><strong>Día 10:</strong> Check-out y traslado al aeropuerto para vuelo de regreso.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="hotel">
+                    <h3>Paradise Island Resort & Spa</h3>
+                    <div class="hotel-info-container">
+                        <img src="imgHoteles/hotelMaldivas.jpg" alt="Paradise Island Resort & Spa" class="hotel-image">
+                        <div class="hotel-details">
+                            <p>
+                                El Paradise Island Resort & Spa es un resort 5 estrellas ubicado en su propia isla privada, 
+                                ofreciendo el máximo lujo en medio del océano Índico:
+                            </p>
+                            <ul>
+                                <li>Villas sobre el agua con piso de vidrio para ver la vida marina</li>
+                                <li>Villas en la playa con acceso directo a la arena blanca</li>
+                                <li>5 restaurantes incluyendo opciones internacionales, italiana y asiática</li>
+                                <li>4 bares incluyendo un bar en la piscina y un bar submarino</li>
+                                <li>Spa sobre el agua con cabinas con vista al océano</li>
+                                <li>Piscina infinita frente al mar</li>
+                                <li>Centro de buceo PADI 5 estrellas</li>
+                                <li>House reef con abundante vida marina accesible desde el resort</li>
+                                <li>WiFi gratuito en todas las áreas</li>
+                            </ul>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(5 estrellas - Luxury Collection)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="policies">
+                    <h3>Políticas importantes</h3>
+                    <h4>Cancelación</h4>
+                    <p>
+                        Cancelación gratuita hasta 90 días antes del viaje. Entre 89 y 60 días antes, 
+                        se cobrará el 30% del valor total. Entre 59 y 30 días, el 60%. Cancelaciones dentro de los 29 días previos 
+                        no son reembolsables.
+                    </p>
+                    
+                    <h4>Documentación requerida</h4>
+                    <p>
+                        Pasaporte con validez mínima de 6 meses. No se requiere visa para estancias turísticas menores a 30 días.
+                    </p>
+                    
+                    <h4>Equipaje</h4>
+                    <p>
+                        Incluye una maleta de bodega de hasta 30kg y equipaje de mano de 7kg por persona.
+                    </p>
+                    
+                    <h4>Traslados</h4>
+                    <p>
+                        Incluye traslado en lancha rápida desde el aeropuerto al resort. Traslados en hidroavión 
+                        disponibles por cargo adicional.
+                    </p>
+                    
+                    <h4>Check-in/Check-out</h4>
+                    <p>
+                        Check-in: 14:00 hs | Check-out: 12:00 hs. Early check-in y late check-out sujetos a disponibilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="../../PaquetesPrincipal/payment.png" alt="Métodos de pago">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

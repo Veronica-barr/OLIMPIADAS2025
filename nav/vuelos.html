@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>volARG</title>
+    <link rel="stylesheet" href="vuelo/css/vuelo.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/skeleton.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/cssPrincipal/carrito.css">
+    <script src="../js/app.js"></script>
+
+</head>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../indexPrincipal.html">Volarg</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../nav/vuelos.html">Vuelos</a></li>
+
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Precios que te haran volar</p>
+            <h2>100% de calidad</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+
+    <main class="main-content container">
+        <section class="container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito</span>
+                    <p>Pedido superior a $150,000</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantía de devolución</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo</span>
+                    <p>Ofrece bonos especiales</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Soporte 24/7</span>
+                    <p>Llama al 11 0122-8976</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="top-products">
+            <h1 class="heading-1">Vuelos</h1>
+
+            <div class="container-products">
+                <!-- Vuelo 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/madrid.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Directo</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Madrid</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Vuelo directo
+                                <br>
+                                Aerolíneas Argentinas
+                                <br>
+                                Salida: 15 Jun 2025 - 22:30
+                                <br>
+                                Llegada: 16 Jun 2025 - 14:15
+                                <br>
+                                Duración: 11h 45m
+                            </p>
+                            $1,250,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/newY.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Escalas</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Nueva York</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="precio">
+                            <p>1 escala (Miami)
+                                <br>
+                                American Airlines
+                                <br>
+                                Salida: 20 Jul 2025 - 10:15
+                                <br>
+                                Llegada: 20 Jul 2025 - 21:30
+                                <br>
+                                Duración: 14h 15m
+                            </p>
+                            $980,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/Barriloche.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Directo</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Bariloche</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Vuelo directo
+                                <br>
+                                Flybondi
+                                <br>
+                                Salida: 05 Ago 2025 - 08:00
+                                <br>
+                                Llegada: 05 Ago 2025 - 10:30
+                                <br>
+                                Duración: 2h 30m
+                            </p>
+                            $85,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/tokio.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Escalas</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Tokio</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>1 escala (Los Ángeles)
+                                <br>
+                                LATAM
+                                <br>
+                                Salida: 12 Sep 2025 - 23:45
+                                <br>
+                                Llegada: 14 Sep 2025 - 06:20
+                                <br>
+                                Duración: 22h 35m
+                            </p>
+                            $2,150,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 5 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/miami.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Directo</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Miami</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Vuelo directo
+                                <br>
+                                American Airlines
+                                <br>
+                                Salida: 25 Oct 2025 - 13:20
+                                <br>
+                                Llegada: 25 Oct 2025 - 21:45
+                                <br>
+                                Duración: 8h 25m
+                            </p>
+                            $750,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 6 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/sidney.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Escalas</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Sidney</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>2 escalas (Santiago, Auckland)
+                                <br>
+                                Qantas
+                                <br>
+                                Salida: 15 Nov 2025 - 09:30
+                                <br>
+                                Llegada: 16 Nov 2025 - 18:15
+                                <br>
+                                Duración: 26h 45m
+                            </p>
+                            $1,890,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 7 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/cordoba.jpg" class="imagen-curso u-full-width">
+                        <span class="discount">Directo</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Córdoba</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Vuelo directo
+                                <br>
+                                JetSMART
+                                <br>
+                                Salida: 03 Dic 2025 - 07:45
+                                <br>
+                                Llegada: 03 Dic 2025 - 09:00
+                                <br>
+                                Duración: 1h 15m
+                            </p>
+                            $45,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 8 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/paris.jpg" class="imagen-curso u-full-width">
+                        <span class="discount">Escalas</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a París</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="precio">
+                            <p>1 escala (São Paulo)
+                                <br>
+                                Air France
+                                <br>
+                                Salida: 10 Ene 2026 - 22:15
+                                <br>
+                                Llegada: 11 Ene 2026 - 17:30
+                                <br>
+                                Duración: 15h 15m
+                            </p>
+                            $1,350,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Vuelo 9 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="vuelo/img/cancun.jpeg" class="imagen-curso u-full-width">
+                        <span class="discount">Directo</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Buenos Aires a Cancún</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Vuelo directo
+                                <br>
+                                Aeroméxico
+                                <br>
+                                Salida: 20 Feb 2026 - 08:30
+                                <br>
+                                Llegada: 20 Feb 2026 - 14:45
+                                <br>
+                                Duración: 6h 15m
+                            </p>
+                            $620,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="PaquetesPrincipal/payment.png" alt="Métodos de pago">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

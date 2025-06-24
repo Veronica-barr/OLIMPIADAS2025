@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuelo a Cancún | VolARG</title>
+    <link rel="stylesheet" href="css/buenosAires.css">
+    <link rel="stylesheet" href="css/normalize2.css">
+    <link rel="stylesheet" href="css/principal2.css">
+    <link rel="stylesheet" href="css/skeleton2.css">
+    <link rel="stylesheet" href="css/estilosCarrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../../indexPrincipal.html">VolARG</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../..//nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../..//nav/vuelos.html">Vuelos</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-container">
+                <div class="product-image">
+                    <img src="../../vueloLimitados/imgVerano/cancunVerano.webp" alt="Cancún">
+                    <img src="imgHoteles/hotelCancun.jpg" alt="Riu Palace Las Américas">
+                    
+                    <span class="discount-badge">8 Días / 7 Noches</span>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Vuelo a Cancún, México</h1>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(87 reseñas)</span>
+                    </div>
+                    
+                    <div class="product-price">$1,680,000</div>
+                    
+                    <p class="product-description">
+                        Vive unas vacaciones de ensueño en las playas de arena blanca y aguas turquesas de Cancún. 
+                        Este paquete todo incluido premium incluye vuelo directo desde Buenos Aires y alojamiento 
+                        en el exclusivo Riu Palace Las Américas, ubicado en la Zona Hotelera.
+                    </p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-calendar-days feature-icon"></i>
+                            <span>Fecha: Mar 15 de Jul - 22 de Jul</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-location-dot feature-icon"></i>
+                            <span>Origen: Buenos Aires, Argentina</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-hotel feature-icon"></i>
+                            <span>Alojamiento: Riu Palace Las Américas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-cocktail feature-icon"></i>
+                            <span>Todo Incluido 24 horas</span>
+                        </div>
+                    </div>
+                    
+                   <button class="btn-add-to-cart agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="product-details-section">
+                <div class="details-tabs">
+                    <button class="tab-btn active" data-tab="description">Descripción</button>
+                    <button class="tab-btn" data-tab="itinerary">Itinerario</button>
+                    <button class="tab-btn" data-tab="hotel">Hotel</button>
+                    <button class="tab-btn" data-tab="policies">Políticas</button>
+                </div>
+                
+                <div class="tab-content active" id="description">
+                    <h3>Acerca de este paquete</h3>
+                    <p>
+                        Este paquete premium a Cancún incluye vuelo directo desde Buenos Aires y 
+                        7 noches de alojamiento en el lujoso Riu Palace Las Américas, un resort todo incluido 
+                        ubicado en primera línea de playa en la Zona Hotelera de Cancún.
+                    </p>
+                    <p>
+                        Cancún es el destino caribeño por excelencia, famoso por sus playas de arena blanca, 
+                        aguas cristalinas y vibrante vida nocturna. Durante tu estadía podrás disfrutar de:
+                    </p>
+                    <ul>
+                        <li>Playa privada con servicio de hamacas y camastros</li>
+                        <li>Gastronomía ilimitada en 5 restaurantes gourmet</li>
+                        <li>Bebidas premium en 4 bares incluyendo bar en la piscina</li>
+                        <li>Entretenimiento diurno y nocturno</li>
+                        <li>Piscinas infinitas con vista al mar Caribe</li>
+                        <li>Excursiones a Chichén Itzá e Isla Mujeres</li>
+                        <li>Spa y gimnasio completamente equipados</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="itinerary">
+                    <h3>Detalles del vuelo</h3>
+                    <table class="flight-details-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Vuelo</th>
+                                <th>Salida</th>
+                                <th>Llegada</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mar 15 Jul</td>
+                                <td>AR 1280 (Aerolíneas Argentinas)</td>
+                                <td>EZE 09:30</td>
+                                <td>CUN 15:15</td>
+                                <td>7h 45m (directo)</td>
+                            </tr>
+                            <tr>
+                                <td>22 Jul</td>
+                                <td>AR 1281 (Aerolíneas Argentinas)</td>
+                                <td>CUN 17:00</td>
+                                <td>EZE 23:45</td>
+                                <td>7h 45m (directo)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 style="margin-top: 30px;">Itinerario sugerido</h3>
+                    <ul>
+                        <li><strong>Día 1:</strong> Llegada al aeropuerto de Cancún y traslado al resort. Check-in y tarde de relax en la playa.</li>
+                        <li><strong>Día 2:</strong> Día de playa y piscina. Cena en el restaurante temático mexicano.</li>
+                        <li><strong>Día 3:</strong> Excursión a Chichén Itzá (opcional) con visita a cenote.</li>
+                        <li><strong>Día 4:</strong> Tour a Isla Mujeres en catamarán con snorkeling.</li>
+                        <li><strong>Día 5:</strong> Día de relax en el resort con sesión de spa (opcional).</li>
+                        <li><strong>Día 6:</strong> Exploración de la Zona Hotelera y compras en La Isla Shopping Village.</li>
+                        <li><strong>Día 7:</strong> Actividades acuáticas en la playa. Cena de despedida.</li>
+                        <li><strong>Día 8:</strong> Mañana libre. Check-out y traslado al aeropuerto.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="hotel">
+                    <h3>Riu Palace Las Américas</h3>
+                    <div class="hotel-info-container">
+                        <img src="imgHoteles/hotelCancun.jpg" alt="Riu Palace Las Américas" class="hotel-image">
+                        <div class="hotel-details">
+                            <p>
+                                El Riu Palace Las Américas es un resort todo incluido de lujo ubicado en el corazón 
+                                de la Zona Hotelera de Cancún. Ofrece:
+                            </p>
+                            <ul>
+                                <li>Habitaciones suites con hidromasaje y minibar rellenado diariamente</li>
+                                <li>5 restaurantes (buffet y a la carta con cocina gourmet)</li>
+                                <li>4 bares incluyendo bar en la piscina y bar deportivo</li>
+                                <li>2 piscinas infinitas con zona de hidromasaje</li>
+                                <li>Playa privada con servicio de hamacas y camastros</li>
+                                <li>Renova Spa con tratamientos especializados</li>
+                                <li>Gimnasio completamente equipado</li>
+                                <li>Entretenimiento nocturno y shows en vivo</li>
+                                <li>WiFi gratuito en todas las áreas</li>
+                            </ul>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(5 estrellas - Cadena RIU Hotels & Resorts)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="policies">
+                    <h3>Políticas importantes</h3>
+                    <h4>Cancelación</h4>
+                    <p>
+                        Cancelación gratuita hasta 45 días antes del viaje. Entre 44 y 30 días antes, 
+                        se cobrará el 30% del valor total. Entre 29 y 15 días, el 50%. Cancelaciones dentro de los 14 días previos 
+                        no son reembolsables.
+                    </p>
+                    
+                    <h4>Documentación requerida</h4>
+                    <p>
+                        Pasaporte con validez mínima de 6 meses. No se requiere visa para estancias turísticas menores a 180 días.
+                    </p>
+                    
+                    <h4>Equipaje</h4>
+                    <p>
+                        Incluye una maleta de bodega de hasta 23kg y equipaje de mano de 8kg por persona.
+                    </p>
+                    
+                    <h4>Todo Incluido</h4>
+                    <p>
+                        El paquete incluye: Alimentos y bebidas ilimitados (incluyendo alcohol nacional), 
+                        actividades de entretenimiento, deportes no motorizados y acceso a todas las instalaciones del resort.
+                    </p>
+                    
+                    <h4>Check-in/Check-out</h4>
+                    <p>
+                        Check-in: 15:00 hs | Check-out: 12:00 hs. Early check-in y late check-out sujetos a disponibilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="../../PaquetesPrincipal/payment.png" alt="Métodos de pago">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
