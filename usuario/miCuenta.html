@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Cuenta - volARG</title>
+    <link rel="stylesheet" href="../css/cssPrincipal/principal.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/skeleton.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/cssPrincipal/carrito.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/miCuenta.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../indexPrincipal.html">Volarg</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <a href="miCuenta.html" title="Mi cuenta" ><i class="fa-solid fa-user user-icon" placeholder="Mi cuenta"></i></a>
+                    </div>
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="usuario.html">Inicio</a></li>
+                <li><a href="../nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="nav/vuelos.html">Vuelos</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <main class="account-container">
+        <div class="account-header">
+            <div class="account-avatar">
+                <i class="fa-solid fa-user-circle"></i>
+                <button class="edit-avatar">Cambiar foto</button>
+            </div>
+            <div class="account-info">
+                <h1>Bienvenido/a</h1>
+                <p>Miembro desde: <span id="member-since">Enero 2023</span></p>
+                <div class="account-status">
+                    <span class="status-badge">Usuario Premium</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="account-content">
+            <aside class="account-sidebar">
+                <ul class="account-menu">
+                    <li class="active"><a href="#"><i class="fas fa-user"></i> Mi perfil</a></li>
+                    <li><a href="#"><i class="fas fa-suitcase"></i> Mis viajes</a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
+                    <li><a href="#"><i class="fas fa-credit-card"></i> Métodos de pago</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notificaciones</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a></li>
+                </ul>
+            </aside>
+
+            <div class="account-main">
+                <section class="account-section">
+                    <h2>Información personal</h2>
+                    <form class="account-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" value="Apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="usuario@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" value="+54 11 1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                            <input type="date" id="fecha-nacimiento" value="1990-01-01">
+                        </div>
+                        <div class="form-group">
+                            <label for="documento">Documento</label>
+                            <input type="text" id="documento" value="DNI 12345678">
+                        </div>
+                        <button type="submit" class="save-button">Guardar cambios</button>
+                    </form>
+                </section>
+
+                <section class="account-section">
+                    <h2>Próximos viajes</h2>
+                    <div class="upcoming-trips">
+                        <div class="trip-card">
+                            <div class="trip-image" style="background-image: url('../PaquetesPrincipal/RioJaneiro.webp');"></div>
+                            <div class="trip-info">
+                                <h3>Rio de Janeiro</h3>
+                                <p class="trip-date">22 Ago - 28 Ago 2025</p>
+                                <p class="trip-status">Confirmado</p>
+                                <a href="#" class="trip-details">Ver detalles</a>
+                            </div>
+                        </div>
+                        <div class="trip-card">
+                            <div class="trip-image" style="background-image: url('../PaquetesPrincipal/Bariloche.webp');"></div>
+                            <div class="trip-info">
+                                <h3>San Carlos de Bariloche</h3>
+                                <p class="trip-date">01 Jul - 05 Jul 2025</p>
+                                <p class="trip-status">Confirmado</p>
+                                <a href="#" class="trip-details">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="account-section">
+                    <h2>Preferencias de viaje</h2>
+                    <form class="preferences-form">
+                        <div class="preference-group">
+                            <label>Tipo de viajero</label>
+                            <div class="preference-options">
+                                <label><input type="checkbox" checked> Aventurero</label>
+                                <label><input type="checkbox"> Familiar</label>
+                                <label><input type="checkbox" checked> Romántico</label>
+                                <label><input type="checkbox"> Cultural</label>
+                            </div>
+                        </div>
+                        <div class="preference-group">
+                            <label>Intereses</label>
+                            <div class="preference-options">
+                                <label><input type="checkbox" checked> Playas</label>
+                                <label><input type="checkbox" checked> Montañas</label>
+                                <label><input type="checkbox"> Ciudades</label>
+                                <label><input type="checkbox"> Naturaleza</label>
+                            </div>
+                        </div>
+                        <div class="preference-group">
+                            <label>Clase preferida</label>
+                            <div class="preference-options">
+                                <label><input type="radio" name="clase" checked> Económica</label>
+                                <label><input type="radio" name="clase"> Premium</label>
+                                <label><input type="radio" name="clase"> Business</label>
+                                <label><input type="radio" name="clase"> Primera</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="save-button">Guardar preferencias</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="../PaquetesPrincipal/payment.png" alt="Métodos de pago">
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/miCuenta.js"></script>
+</body>
+</html>

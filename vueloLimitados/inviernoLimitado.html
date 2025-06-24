@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Articulos al aire libre</title>
+    <link rel="stylesheet" href="../css/cssPrincipal/normalize.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/skeleton.css">
+    <link rel="stylesheet" href="css/invierno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/cssPrincipal/carrito.css">
+
+
+</head>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../indexPrincipal.html">Volarg</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../indexPrincipal.html">Inicio</a></li>
+                <li><a href="../nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="../nav/vuelos.html">Vuelos</a></li>
+
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Precios que te haran volar</p>
+            <h2>Invierno</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+
+    <main class="main-content container">
+        <section class="container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito</span>
+                    <p>Pedido superior a $150,000</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantía de devolución</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo</span>
+                    <p>Ofrece bonos especiales</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Soporte 24/7</span>
+                    <p>Llama al 11 0122-8976</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="top-products">
+            <div class="container-options">
+        
+            </div>
+
+
+
+            <div class="container-products">
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/bariloche.jpeg" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Bariloche, Argentina</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Vuelo + Alojamiento
+                                <br>
+                                Saliendo desde Córdoba
+                                <br>
+                                Desde Vie 15 de Ago
+                                <br>
+                                Hasta Vie 22 Ago
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Llao Llao Hotel & Resort
+                               </p>
+
+
+                            $1,894,309
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/bariloche.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/ushuaia-1.jpg" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Ushuaia, Argentina</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Vuelo + Alojamiento
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mar 1 de Jul
+                                <br>
+                                Hasta Mar 7 de Jul
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Los Cauquenes Resort
+                            </p>
+                            $980,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/ushuaia.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+               
+                
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/chile.jpg" class="imagen-curso u-full-width">
+
+                        <span class="discount">3 Dias/ 2 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Chile</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Vie 20 de Jun
+                                <br>
+                                Hasta Lun 23 de Jun
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i>  Hotel Valle Nevado
+                               </p>
+
+
+                            $1,350,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/chile.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/Suiza.avif" class="imagen-curso u-full-width">
+
+                        <span class="discount">5 Dias/ 4 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Suiza</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Vie 15 de Ago
+                                <br>
+                                Hasta Mié 20 Ago
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Zermatt
+                               </p>
+
+
+                            $4,800,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/suiza.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/tokio.jpg" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Japón, Tokio</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Vie 10 de Ene
+                                <br>
+                                Hasta Vie 17 de Ene
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Hotel Gracery Shinjuku
+                               </p>
+                            $5,200,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/japon.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgInvierno/Canada.webp" class="imagen-curso u-full-width">
+
+                        <span class="discount">12 Dias/ 11 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Canadá</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Lun 1 de Dic
+                                <br>
+                                Hasta Vie 12 de Dic
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Fairmont Chateau Whistler
+                               </p>
+
+
+                            $4,500,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/invierno/canada.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="PaquetesPrincipal/payment.png" alt="Métodos de pago">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.auth-container {
+    max-width: 500px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.auth-header i {
+    font-size: 3rem;
+    color: #c7a17a;
+    margin-bottom: 1rem;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+}

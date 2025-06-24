@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Articulos al aire libre</title>
+    <link rel="stylesheet" href="../css/cssPrincipal/normalize.css">
+    <link rel="stylesheet" href="../css/cssPrincipal/skeleton.css">
+    <link rel="stylesheet" href="css/verano.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/cssPrincipal/carrito.css">
+
+
+</head>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="../indexPrincipal.html">Volarg</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="../validacion/login.html">Iniciar sesión</a>
+                            <a href="">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="../indexPrincipal.html">Inicio</a></li>
+                <li><a href="/nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="/nav/vuelos.html">Vuelos</a></li>
+
+            </ul>
+
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Precios que te haran volar</p>
+            <h2>Verano</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+
+    <main class="main-content container">
+        <section class="container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito</span>
+                    <p>Pedido superior a $150,000</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantía de devolución</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo</span>
+                    <p>Ofrece bonos especiales</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Soporte 24/7</span>
+                    <p>Llama al 11 0122-8976</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="top-products">
+            <div class="container-options">
+        
+            </div>
+
+
+
+            <div class="container-products">
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgVerano/puntaCana.jpg" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Punta Cana, República Dominicana</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Vuelo + Alojamiento
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mié 1 de Oct
+                                <br>
+                                Hasta Mar 7 Oct
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Riu República - Adults Only - All Inclusive
+                               </p>
+
+
+                            $1,894,309
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/republicaDominic.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgVerano/puertoRico.png" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Carolina, Puerto Rico</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Vuelo + Alojamiento
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mié 1 de Oct
+                                <br>
+                                Hasta Mar 7 Oct
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Beach Front Condo With Endless Ocean Views II
+                               </p>
+
+
+
+                            $4,873,406
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/puertoRico.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+               
+                
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgVerano/cancunVerano.webp" class="imagen-curso u-full-width">
+
+                        <span class="discount">8 Dias/ 7 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Cancun, México</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mar 15 de Jul
+                                <br>
+                                Hasta 22 de Jul
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Riu Palace Las Américas
+                               </p>
+
+
+                            $1,680,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/mexico.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgVerano/IslasMaldivas.webp" class="imagen-curso u-full-width">
+
+                        <span class="discount">10 Dias/ 9 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Islas Maldivas</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mié 10 de Sep
+                                <br>
+                                Hasta Sáb 25 Sep
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Paradise Island Resort & Spa
+                               </p>
+
+
+                            $3,500,000
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/islasMaldivas.html'">Ver detalles</button>
+                    
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgArg/marDelPlata.jpg" class="imagen-curso u-full-width">
+
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo a Mar del Plata, Buenos Aires</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Ushuaia, Tierra del Fuego
+                                <br>
+                                Desde Mié 1 de Oct
+                                <br>
+                                Hasta Mar 7 de Oct
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Hotel Denver
+                               </p>
+
+
+                            $1,426,162
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/buenosAires.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="../vueloLimitados/imgVerano/Bali.jpeg" class="imagen-curso u-full-width">
+
+                        <span class="discount">6 Dias/ 5 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Vuelo A Bali, Indonesia</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Sáb 1 de Nov
+                                <br>
+                                Hasta Vie 7 de Nov
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> The Westin Resort Nusa Dua
+                               </p>
+
+
+                            $1,595,542
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                        <button onclick="window.location.href = '../detalleProducto/verano/indonesia.html'">Ver detalles</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="PaquetesPrincipal/payment.png" alt="Métodos de pago">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

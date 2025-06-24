@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>volARG</title>
+    <link rel="stylesheet" href="css/cssPrincipal/principal.css">
+    <link rel="stylesheet" href="css/cssPrincipal/skeleton.css">
+    <link rel="stylesheet" href="css/cssPrincipal/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="detalleProducto/verano/css/estilosCarrito.css">
+</head>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="container-logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h1 class="logo"><a href="indexPrincipal.html">Volarg</a></h1>
+                </div>
+                
+                <div class="user-menu-container">
+                    <div class="user-menu">
+                        <i class="fa-solid fa-user user-icon"></i>
+                        <div class="user-dropdown">
+                            <a href="./validacion/login.php">Iniciar sesión</a>
+                            <a href="./validacion/register.php">Registrarme</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="">Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-navbar">
+        <nav class="navbar container">
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="articulos">
+                <li><a href="indexPrincipal.html">Inicio</a></li>
+                <li><a href="nav/alojamientos.html">Alojamientos</a></li>
+                <li><a href="nav/vuelos.html">Vuelos</a></li>
+
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar...">
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Precios que te haran volar</p>
+            <h2>100% de calidad</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+
+    <main class="main-content container">
+        <section class="container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane-up"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito</span>
+                    <p>Pedido superior a $150,000</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contrareembolso</span>
+                    <p>100% garantía de devolución</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo</span>
+                    <p>Ofrece bonos especiales</p>
+                </div>
+            </div>
+        
+            <div class="card-feature">
+                <i class="fa-solid fa-headset"></i>
+                <div class="feature-content">
+                    <span>Soporte 24/7</span>
+                    <p>Llama al 11 0122-8976</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container top-categories">
+            <h1 class="heading-1"> ¡Descuentos solo por tiempo limitado! </h1>
+            <div class="container-categories">
+                <div class="card-category category-vueloLimitado1">
+                    <p>En el pais</p>
+                    <a href="vueloLimitados/vuelosArg.html">Ver más</a>
+                </div>
+
+                <div class="card-category category-vueloLimitado2">
+                    <p>Vivi el verano</p>
+                    <a href="vueloLimitados/veranoLimitados.html">Ver más</a>
+                </div>
+
+
+                <div class="card-category category-vueloLimitado3">
+                    <p>Vivi el invierno</p>
+                    <a href="vueloLimitados/inviernoLimitado.html">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-products">
+            <h1 class="heading-1">Ofertas en paquetes turísticos para los mejores destinos</h1>
+
+
+            <div class="container-products">
+
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="PaquetesPrincipal/RioJaneiro.webp" class="imagen-curso u-full-width">
+                        <span class="discount">7 Dias/ 6 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Paquete a Rio de Janeiro</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Vie 22 Ago
+                                <br>
+                                Hasta Jue 28 Ago
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Che Lagarto Copacabana - Hostel
+                               </p>
+
+                          $716,544
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="PaquetesPrincipal/puertoIguazu.webp" class="imagen-curso u-full-width">                        
+                        <span class="discount">5 Dias/ 4 noches</span>
+
+                    </div>
+                    <div class="info-card">
+                        <h4>Paquete a Puerto Iguazú</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Lun 06 Oct
+                                <br>
+                                Hasta Vie 10 Oct
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Hosteleria La Cabaña
+                               </p>
+                               $183,138
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="PaquetesPrincipal/Bariloche.webp" class="imagen-curso u-full-width">
+
+                        <span class="discount">5 Dias/ 4 noches</span>
+                    </div>
+                    <div class="info-card">
+                        <h4>Paquete a San Carlos de Bariloche</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Saliendo desde Buenos Aires
+                                <br>
+                                Desde Mar 01 Jul
+                                <br>
+                                Hasta Sáb 05 Jul
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> HOPA Home Patagonia Hostel & Bar
+                               </p>
+
+
+                            $246,329
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="PaquetesPrincipal/Cancun.webp" class="imagen-curso u-full-width">             
+                        <span class="discount">13 Dias/ 12 noches</span>
+
+                     </div>
+                    <div class="info-card">
+                        <h4>Riu Palace Peninsula- All Inclusive</h4>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="precio">
+                            <p>Por persona.
+                                <br>
+                                Vuelo con escalas
+                                <br>
+                                Desde Mié 26 nov
+                                <br>
+                                Hasta Lun 08 Dic
+                                <br>
+                                <i class="fa-solid fa-bell-concierge"></i> Riu Palace Peninsula - All Inclusive
+                               </p>
+                            $3,619,494
+                        </div>
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Juan XXIII 125, B1620 Maquinista Savio, Provincia de Buenos Aires</li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Email: eestn3@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Ofertas exclusivas en tu email</p>
+                    <div class="content">
+                        <p>Recibirás emails promocionales de VolARG.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí..">
+                        <button>¡Quiero recibirlas!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Desarrollado por Programación 7'5, Coronel, Cabrera, Alfonzo, Barrios, Gutierrez. &copy; 2025</p>
+                <img src="PaquetesPrincipal/payment.png" alt="Métodos de pago">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
